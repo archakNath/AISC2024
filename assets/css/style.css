@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#home {
+    display: flex;
+    flex-direction: row;
+}
+
+.homeContainer {
+    width: 50%;
+    height: 100vh;
+}
+
+.homeContainer:nth-child(2) {
+    background-image: url(/assets/images/home_bg.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(max-width:700px) {
+    #home {
+        flex-direction: column;
+    }
+
+    .homeContainer {
+        width: 100%;
+    }
+
+    .homeContainer:nth-child(2){
+        background-image: url(/assets/images/home_bg_mobile.png);
+        background-position: center;
+        background-size: contain;
+        height: 350px;
+    }
+
+}
