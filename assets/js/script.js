@@ -18,8 +18,8 @@ var intervalId = setInterval(function () {
     const min_left = document.getElementById("min_left");
     const sec_left = document.getElementById("sec_left");
 
-    day_left.innerText = day -1;
-    hrs_left.innerText = hrs + 23;
-    min_left.innerText = min + 59;
-    sec_left.innerText = sec + 59;
+    day_left.innerText = (day -1).toString().padStart(2, '0');
+    hrs_left.innerText = (hrs + 23).toString().padStart(2, '0');
+    min_left.innerText = (min + 59).toString().padStart(2, '0');
+    sec_left.innerText = (sec + 59).toString().padStart(2, '0');
 }, 1000);
