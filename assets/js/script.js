@@ -1,4 +1,3 @@
-
 var intervalId = setInterval(function () {
     const today = new Date();
     const dday = new Date(2024, 6, 11);
