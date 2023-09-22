@@ -1,3 +1,5 @@
+
+// UPDATES TIME REMAINING FROM THE D-DAY
 var intervalId = setInterval(function () {
     const today = new Date();
     const dday = new Date(2024, 6, 11);
@@ -22,3 +24,48 @@ var intervalId = setInterval(function () {
     min_left.innerText = (min + 59).toString().padStart(2, '0');
     sec_left.innerText = (sec + 59).toString().padStart(2, '0');
 }, 1000);
+
+
+// CHANGES ACTIVE NAV ITEM ACCORDING TO SECTION SCROLLED
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("header nav ul li a");
+
+function makeActive(link) {
+    navLinks.forEach(item => item.classList.remove("active"));
+    link.classList.add("active");
+}
+
+function makeActive(link) {
+    navLinks.forEach(item => item.classList.remove("active"));
+    link.classList.add("active");
+}
+
+function checkSectionInView() {
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 150 && rect.bottom >= 150) { // You can adjust this value
+            const correspondingLink = document.querySelector(`a[href="#${section.id}"]`);
+            makeActive(correspondingLink);
+        }
+    });
+}
+
+window.addEventListener("scroll", checkSectionInView);
+
+// HAMBERG MENU LOGIC
+var isClicked = false;
+
+const menu_btn = document.getElementById("menu");
+const nav = document.getElementById("nav");
+
+menu_btn.onclick = () => {
+    if(isClicked){
+        menu_btn.src = "/assets/images/menu-icon.png";
+        nav.style.display = "none";
+    } else {
+        menu_btn.src = "/assets/images/cross.png";
+        nav.style.display = "block";
+    }
+    isClicked = !isClicked;
+}
+
