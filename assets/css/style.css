@@ -110,8 +110,12 @@
     }
 
     .time-left p span:nth-child(1){
-        font-size: 35px;
+        font-size: 40px;
         min-width: 50px;
+    }
+
+    .time-left p span:nth-child(2){
+        color: white;
     }
 
 }
