@@ -1,7 +1,7 @@
 
 var intervalId = setInterval(function () {
     const today = new Date();
-    const dday = new Date(2024, 7, 11);
+    const dday = new Date(2024, 6, 11);
 
     const one_min = 60;
     const one_hrs = 60 * 60;
@@ -18,8 +18,8 @@ var intervalId = setInterval(function () {
     const min_left = document.getElementById("min_left");
     const sec_left = document.getElementById("sec_left");
 
-    day_left.innerText = day;
-    hrs_left.innerText = hrs + 24;
-    min_left.innerText = min + 60;
-    sec_left.innerText = sec + 60;
+    day_left.innerText = day -1;
+    hrs_left.innerText = hrs + 23;
+    min_left.innerText = min + 59;
+    sec_left.innerText = sec + 59;
 }, 1000);
