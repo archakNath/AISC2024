@@ -124,4 +124,8 @@
     #homeLogo{
         width: 100%;
     }
+
+    .time-left p span:nth-child(1){
+        font-size: 25px;
+    }
 }
