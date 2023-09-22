@@ -58,7 +58,8 @@ var isClicked = false;
 const menu_btn = document.getElementById("menu");
 const nav = document.getElementById("nav");
 
-menu_btn.onclick = () => {
+
+function buttonClicked(){
     if(isClicked){
         menu_btn.src = "/assets/images/menu-icon.png";
         nav.style.display = "none";
@@ -69,3 +70,12 @@ menu_btn.onclick = () => {
     isClicked = !isClicked;
 }
 
+menu_btn.onclick = buttonClicked;
+
+const nav_items = document.querySelectorAll("header nav ul li");
+
+nav_items.forEach(item => {
+    if(window.getComputedStyle(menu_btn).getPropertyValue("display") == "block"){
+        item.addEventListener("click", buttonClicked);
+    }
+});
