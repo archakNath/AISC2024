@@ -270,13 +270,10 @@ header ul li:hover a,
   padding-top: 10px;
 }
 
-#speakers h1{
+h1.heading {
   text-align: center;
   margin: auto;
   width: fit-content;
-}
-
-h1.heading {
   font-weight: 1000;
   font-size: 48px;
   background-image: url(/assets/images/about_pic1.jpg);
@@ -321,4 +318,31 @@ h1.heading {
   .imageContainer img {
     height: auto;
   }
+}
+
+#organiser{
+    width: 100%;
+    padding: 70px 20px;
+}
+
+.organiser-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.organiser-items h3{
+    text-align: center;
+}
+
+.organiser-items img{
+    margin: 20px;
+    width: 200px;
+}
+
+@media(max-width:700px){
+    #organiser{
+        height: fit-content;
+    }
 }
