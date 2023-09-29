@@ -291,6 +291,7 @@ h1.heading {
   -webkit-background-clip: text;
   color: transparent;
   background-position: top;
+  margin-top: 70px;
 }
 
 .speakers-items {
@@ -329,10 +330,6 @@ h1.heading {
 
   .imageContainer img {
     height: auto;
-  }
-
-  #speakers .heading {
-    margin-top: 70px;
   }
 
 }
@@ -584,6 +581,11 @@ footer p{
 .footer-container1-2:nth-child(2) ul li a{
   text-decoration: none;
   color: gray;
+  transition: .2s all;
+}
+
+.footer-container1-2:nth-child(2) ul li a:hover{
+  color: white;
 }
 
 
