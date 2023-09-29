@@ -523,6 +523,10 @@ h1.heading {
 
 @media(max-width:700px){
 
+  #contact{
+    padding-top: 70px;
+  }
+
   #contact .heading{
     margin-bottom: 20px;
   }
