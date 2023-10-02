@@ -54,6 +54,7 @@ const menu_btn = document.getElementById("menu");
 const nav = document.getElementById("nav");
 const bppimtlogo = document.getElementById("bppimtlogo");
 const culogo = document.getElementById("cu-logo");
+const header = document.getElementById("header");
 
 
 function buttonClicked(){
@@ -62,11 +63,15 @@ function buttonClicked(){
         nav.style.display = "none";
         bppimtlogo.style.display = "block";
         culogo.style.display = "block";
+        header.style.backgroundColor = "#fff"
+        header.style.boxShadow = "0px -2px 7px #212121";
     } else {
         menu_btn.src = "/assets/images/cross.png";
         nav.style.display = "flex";
         bppimtlogo.style.display = "none";
         culogo.style.display = "none";
+        header.style.backgroundColor = "transparent"
+        header.style.boxShadow = "none";
     }
     isClicked = !isClicked;
 }
