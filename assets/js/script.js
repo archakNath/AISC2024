@@ -35,11 +35,6 @@ function makeActive(link) {
     link.classList.add("active");
 }
 
-function makeActive(link) {
-    navLinks.forEach(item => item.classList.remove("active"));
-    link.classList.add("active");
-}
-
 function checkSectionInView() {
     sections.forEach(section => {
         const rect = section.getBoundingClientRect();
@@ -57,15 +52,21 @@ var isClicked = false;
 
 const menu_btn = document.getElementById("menu");
 const nav = document.getElementById("nav");
+const bppimtlogo = document.getElementById("bppimtlogo");
+const culogo = document.getElementById("cu-logo");
 
 
 function buttonClicked(){
     if(isClicked){
         menu_btn.src = "/assets/images/menu-icon.png";
         nav.style.display = "none";
+        bppimtlogo.style.display = "block";
+        culogo.style.display = "block";
     } else {
         menu_btn.src = "/assets/images/cross.png";
-        nav.style.display = "block";
+        nav.style.display = "flex";
+        bppimtlogo.style.display = "none";
+        culogo.style.display = "none";
     }
     isClicked = !isClicked;
 }
