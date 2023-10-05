@@ -85,3 +85,11 @@ nav_items.forEach(item => {
         item.addEventListener("click", buttonClicked);
     }
 });
+
+
+// LINKED CFP TO BUTTON
+
+const download_btn = document.getElementById("download_btn");
+download_btn.onclick = () => {
+    window.location.href = "https://firebasestorage.googleapis.com/v0/b/artco-bb7b5.appspot.com/o/aisc2024_cfp.pdf?alt=media&token=5e3f02c6-4a61-4149-8cd2-6e7c3a1e7e62&_gl=1*1w8o2nl*_ga*NjIzOTIyMzk5LjE2ODAzNDI0NzA.*_ga_CW55HF8NVT*MTY5NjUwMjk2OS42MC4xLjE2OTY1MDMwNDUuNTMuMC4w";
+}
