@@ -471,6 +471,7 @@ header ul li:hover a,
 #committee h3 {
   margin-top: 20px;
   margin-bottom: 5px;
+  color: #218900;
 }
 
 @media(max-width:700px) {
