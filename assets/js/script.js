@@ -91,5 +91,5 @@ nav_items.forEach(item => {
 
 const download_btn = document.getElementById("download_btn");
 download_btn.onclick = () => {
-    window.location.href = "https://firebasestorage.googleapis.com/v0/b/artco-bb7b5.appspot.com/o/CFP_NEW_compressed.pdf?alt=media&token=0b6c4aae-1a2b-42ed-9295-c6ba74be16dc&_gl=1*1g0qp0e*_ga*NjIzOTIyMzk5LjE2ODAzNDI0NzA.*_ga_CW55HF8NVT*MTY5NjUyNzIxMi42Mi4xLjE2OTY1MjczMzIuMjEuMC4w";
+    window.location.href = "https://firebasestorage.googleapis.com/v0/b/acm-bppimt.appspot.com/o/aisc2024_cfp_compressed.pdf?alt=media&token=86917952-2909-4dd7-bcfa-bb81511fe741";
 }
