@@ -11,14 +11,14 @@
   font-style: normal;
 }
 
+h1{
+  color: green;
+}
+
 .centre{
   max-width: 1000px;
   margin-inline: auto;
   padding: 10px;
-}
-
-h1{
-  color: green;
 }
 
 header{
@@ -62,8 +62,24 @@ main .centre{
   padding-block: 100px;
 }
 
-main img{
-  width: 250px;
+main .centre img{
+  width: 40%;
+}
+
+main .centre div{
+  width: 60%;
+}
+
+main .centre div h1{
+  background-image: linear-gradient(to right, orange, #2ecc71, green, black);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+main .centre div h3{
+  color: green;
+  font-weight: 500;
 }
 
 main p{
@@ -79,6 +95,83 @@ main p{
   main .centre{
     flex-direction: column;
     padding-block: 50px;
-    gap: 0px;
+  }
+
+  main .centre img{
+    width: 100%;
+  }
+  
+  main .centre div{
+    width: 100%;
+  }
+}
+
+section.display{
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0 0 400px rgba(128, 128, 128, 0.183);
+  padding: 0;
+  overflow: hidden;
+  margin-block: 50px;
+}
+
+section.display .menu{
+  width: 25%;
+  background-color: green;
+  padding: 10px;
+  color: white;
+}
+
+section.display .menu ul{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+section.display .menu li{
+  list-style: none;
+  padding: 8px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+section.display .menu li.active, section.display .menu li:hover{
+  background-color: greenyellow;
+  color:green;
+}
+
+section.display .screen{
+  width: 70%;
+}
+
+section.display .screen .indi-screen{
+  padding: 10px;
+  display: none;
+  height: 100%;
+}
+
+section.display .screen .indi-screen:nth-child(1){
+  display: block;
+}
+
+section.display .screen .indi-screen h1{
+  margin-bottom: 10px;
+}
+
+section.display .screen .indi-screen h3{
+  margin-top: 5px;
+}
+
+@media(max-width:700px){
+  section.display{
+    margin-block:0;
+    flex-direction: column;
+    margin-inline: 10px;
+  }
+  section.display .menu{
+    width: 100%;
+  }
+  section.display .screen{
+    width: 100%;
   }
 }
