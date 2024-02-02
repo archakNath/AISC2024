@@ -11,6 +11,10 @@
   font-style: normal;
 }
 
+::-webkit-scrollbar{
+  display: none;
+}
+
 h1{
   color: green;
 }
