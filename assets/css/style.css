@@ -154,6 +154,10 @@ section.display .screen .indi-screen:nth-child(1){
   display: block;
 }
 
+section.display .screen .indi-screen:nth-child(6) img{
+  width: 100%;
+}
+
 section.display .screen .indi-screen h1{
   margin-bottom: 10px;
 }
