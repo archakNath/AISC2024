@@ -48,6 +48,12 @@ section{
   max-width: 1000px;
 }
 
+@media(max-width:700px){
+  header img.logo{
+    height: 70px;
+  }
+}
+
 main{
   background-image: url(/assets/images/home_section_bg.jpg);
   background-size: cover;
@@ -95,6 +101,10 @@ main p{
 }
 
 @media(max-width:700px){
+
+  main{
+    padding-top: 90px;
+  }
 
   header div:nth-child(1) .logo:nth-child(2){
     display: none;
@@ -229,6 +239,9 @@ section.display .screen .registration img{
 
 
 @media(max-width:700px){
+  #display{
+    padding: 10px;
+  }
   section.display{
     margin-block:0;
     flex-direction: column;
