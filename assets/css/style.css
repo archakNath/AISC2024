@@ -84,7 +84,7 @@ main .centre div{
   width: 60%;
 }
 
-main .centre div h1{
+main .centre div h1, main .centre div h4{
   background-image: linear-gradient(to right, orange, #2ecc71, green, black);
   -webkit-background-clip: text;
   background-clip: text;
@@ -190,11 +190,12 @@ section.display .screen .indi-screen h3{
   color: green;
 }
 
-section.display .screen .contact strong{
-  margin-top: 10px;
+section.display .screen .contact h4{
+  margin-top: 5px;
 }
 
-section.display .screen .registration img{
+
+section.display .screen .registration img, section.display .screen .schedule img{
   width: 100%;
   border-radius: 10px;
 }
