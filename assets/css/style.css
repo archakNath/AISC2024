@@ -24,8 +24,13 @@ a{
   color: green;
 }
 
+p{
+  text-align: justify;
+  line-height: 25px;
+}
+
 li{
-  list-style: none;
+  line-height: 25px;
 }
 
 .centre{
@@ -46,7 +51,13 @@ header{
 }
 
 header img.logo{
-  height: 90px;
+  width: 90px;
+}
+
+header div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 section{
@@ -55,7 +66,20 @@ section{
 
 @media(max-width:700px){
   header img.logo{
-    height: 70px;
+    width: 70px;
+  }
+  header h1{
+    font-size: 20px;
+  }
+}
+
+@media(max-width:350px){
+  header img.logo{
+    width: 50px;
+  }
+
+  header h1{
+    font-size: 15px;
   }
 }
 
@@ -81,12 +105,8 @@ main .centre{
   padding-block: 100px;
 }
 
-main .centre img{
-  width: 40%;
-}
-
 main .centre div{
-  width: 60%;
+  width: 70%;
 }
 
 main .centre div h1, main .centre div h4{
@@ -99,6 +119,8 @@ main .centre div h1, main .centre div h4{
 main .centre div h3{
   color: green;
   font-weight: 500;
+  font-size: 16px;
+  margin-top: 20px;
 }
 
 main p{
@@ -180,6 +202,11 @@ section.display .screen .indi-screen:nth-child(1){
   display: block;
 }
 
+section.display .screen .sponsorship h1{
+  width: 100%;
+  text-align: center;
+}
+
 section.display .screen .sponsorship li{
   list-style: "➡️";
   font-family: "Protest Riot", sans-serif;
@@ -209,6 +236,8 @@ section.display .screen .sponsorship img{
 
 section.display .screen .indi-screen h1{
   margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
 }
 
 section.display .screen .indi-screen h3{
@@ -220,10 +249,45 @@ section.display .screen .contact h4{
   margin-top: 5px;
 }
 
+section.display .screen .contact .container{
+  display: flex;
+  gap: 20px;
+}
+
+section.display .screen .contact .container .indi-contact{
+  width: 50%;
+}
+
+section.display .screen .contact p{
+  text-align: left;
+}
 
 section.display .screen .registration img, section.display .screen .schedule img{
   width: 100%;
   border-radius: 10px;
+}
+
+section.display .screen .important-dates p{
+  border: 1px solid gray;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
+section.display .screen .important-dates span{
+  color: white;
+  background: linear-gradient(45deg, orange, green);
+  padding: 8px 10px;
+  border-radius: 0 5px 5px 0;
+}
+
+section.display .screen .organizing-committee li{
+  list-style: none;
 }
 
 .button {
@@ -281,6 +345,16 @@ section.display .screen .registration img, section.display .screen .schedule img
   }
   section.display .screen{
     width: 100%;
+  }
+  section.display .screen .important-dates p{
+    flex-direction: column;
+    padding: 0;
+    text-align: left;
+  }
+  section.display .screen .important-dates span{
+    width: 100%;
+    border-radius: 0;
+    text-align: center;
   }
 }
 
