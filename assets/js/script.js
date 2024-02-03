@@ -3,6 +3,17 @@ const menu_btns = document.querySelectorAll("section.display .menu li");
 const footer_links = document.querySelectorAll("footer li");
 const download_button = document.getElementById("download");
 
+for (let j = 0; j < indi_screens.length; j++) {
+    const screen = indi_screens[j];
+    screen.style.display = "none";
+}
+for (let j = 0; j < menu_btns.length; j++) {
+    const button = menu_btns[j];
+    button.removeAttribute("class");
+}
+menu_btns[0].setAttribute("class", "active");
+indi_screens[0].style.display = "block";
+
 for (let i = 0; i < menu_btns.length; i++) {
     const button = menu_btns[i];
     button.onclick = () => {
