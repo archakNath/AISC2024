@@ -48,15 +48,15 @@ header{
   width: 100%;
   background-color: white;
   z-index: 2;
+  background-image: url(/assets/images/howrah_bridge_image.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-block: 10px;
 }
 
 header img.logo{
-  height: 70px;
+  height: 90px;
   width: fit-content;
-}
-
-header img.logo:nth-child(1){
-  height: 70px;
 }
 
 header div{
@@ -72,12 +72,9 @@ section{
 
 @media(max-width:700px){
   header img.logo{
-    height: 70px;
+    height: 50px;
   }
 
-  header img.logo:nth-child(1){
-    height: 40px;
-  }
   header h1{
     font-size: 20px;
   }
@@ -85,7 +82,7 @@ section{
 
 @media(max-width:450px){
   header img.logo{
-    height: 50px;
+    height: 40px;
   }
 
   header h1{
@@ -122,6 +119,7 @@ main .centre{
   height: 100%;
   gap: 20px;
   padding-block: 100px;
+  text-align: center;
 }
 
 main .centre div{
