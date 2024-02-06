@@ -51,7 +51,12 @@ header{
 }
 
 header img.logo{
-  width: 90px;
+  height: 70px;
+  width: fit-content;
+}
+
+header img.logo:nth-child(1){
+  height: 70px;
 }
 
 header div{
@@ -67,16 +72,29 @@ section{
 
 @media(max-width:700px){
   header img.logo{
-    width: 70px;
+    height: 70px;
+  }
+
+  header img.logo:nth-child(1){
+    height: 40px;
   }
   header h1{
     font-size: 20px;
   }
 }
 
-@media(max-width:350px){
+@media(max-width:450px){
   header img.logo{
-    width: 50px;
+    height: 50px;
+  }
+
+  header h1{
+    font-size: 15px;
+  }
+}
+@media(max-width:370px){
+  header img.logo{
+    height: 30px;
   }
 
   header h1{
