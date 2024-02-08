@@ -22,6 +22,7 @@ h1{
 
 a{
   color: green;
+  font-weight: bold;
 }
 
 p{
@@ -227,19 +228,8 @@ section.display .screen .sponsorship li{
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
-}
-
-section.display .screen .sponsorship li:nth-child(2){
-  color: palevioletred;
-}
-section.display .screen .sponsorship li:nth-child(3){
-  color:peru;
-}
-section.display .screen .sponsorship li:nth-child(4){
+  text-align: center;
   color: purple;
-}
-section.display .screen .sponsorship li:nth-child(5){
-  color: red;
 }
 
 section.display .screen .sponsorship img{
@@ -291,6 +281,7 @@ section.display .screen .important-dates p{
   justify-content: space-between;
   align-items: center;
   font-weight: 500;
+  font-weight: bold;
 }
 
 section.display .screen .important-dates span{
@@ -302,6 +293,10 @@ section.display .screen .important-dates span{
 
 section.display .screen .organizing-committee li{
   list-style: none;
+}
+
+section.display .screen .guidelines li{
+  margin-bottom: 10px;
 }
 
 .button {
