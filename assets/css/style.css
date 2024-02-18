@@ -312,6 +312,11 @@ section.display .screen .registration .price {
   box-shadow: 0 0 10px rgba(128, 128, 128, 0.347);
   margin-bottom: 10px;
   font-weight: bold;
+  gap: 20px;
+}
+
+section.display .screen .registration .price p{
+  text-align: left;
 }
 
 .button {
