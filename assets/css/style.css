@@ -182,9 +182,9 @@ section.display {
 
 section.display .menu {
   width: 25%;
-  background-color: green;
+  background: linear-gradient(to right, #7efb7b, #0bcbfb);
   padding: 10px;
-  color: white;
+  font-weight: bold;
 }
 
 section.display .menu ul {
