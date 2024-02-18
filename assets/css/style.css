@@ -1,8 +1,7 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Protest+Riot&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,35 +11,35 @@
   font-style: normal;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
 
-h1{
+h1 {
   color: green;
 }
 
-a{
+a {
   color: green;
   font-weight: bold;
 }
 
-p{
+p {
   text-align: justify;
   line-height: 25px;
 }
 
-li{
+li {
   line-height: 25px;
 }
 
-.centre{
+.centre {
   max-width: 1000px;
   margin-inline: auto;
   padding: 10px;
 }
 
-header{
+header {
   display: flex;
   justify-content: space-between;
   padding: 10px;
@@ -55,62 +54,64 @@ header{
   padding-block: 10px;
   aspect-ratio: 10/1;
 }
-header div{
+
+header div {
   height: 100%;
 }
 
-header img.logo{
+header img.logo {
   height: 100%;
   width: fit-content;
 }
 
-#aisclogo{
+#aisclogo {
   height: 90%;
 }
 
-header div{
+header div {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
 }
 
-section{
+section {
   max-width: 1000px;
 }
 
-@media(max-width:700px){
+@media(max-width:700px) {
 
-  header h1{
+  header h1 {
     font-size: 20px;
   }
 }
 
-@media(max-width:450px){
-  header h1{
-    font-size: 15px;
-  }
-}
-@media(max-width:370px){
-  header h1{
+@media(max-width:450px) {
+  header h1 {
     font-size: 15px;
   }
 }
 
-main{
+@media(max-width:370px) {
+  header h1 {
+    font-size: 15px;
+  }
+}
+
+main {
   background-image: url(/assets/images/home_section_bg.jpg);
   background-size: cover;
   background-position: center;
   padding-top: 110px;
 }
 
-main marquee{
+main marquee {
   background-color: green;
   color: white;
   padding: 5px;
 }
 
-main .centre{
+main .centre {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,57 +121,58 @@ main .centre{
   text-align: center;
 }
 
-main .centre div{
+main .centre div {
   width: 70%;
 }
 
-main .centre div h1, main .centre div h4{
+main .centre div h1,
+main .centre div h4 {
   background-image: linear-gradient(to right, orange, #2ecc71, green, black);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
-main .centre div h3{
+main .centre div h3 {
   color: green;
   font-weight: 500;
   font-size: 16px;
   margin-top: 20px;
 }
 
-main p{
+main p {
   font-weight: 500;
 }
 
-@media(max-width:700px){
+@media(max-width:700px) {
 
-  main{
+  main {
     padding-top: 90px;
   }
 
-  header div:nth-child(1) .logo:nth-child(2){
+  header div:nth-child(1) .logo:nth-child(2) {
     display: none;
   }
 
-  main .centre{
+  main .centre {
     flex-direction: column;
     padding-block: 50px;
   }
 
-  main .centre img{
+  main .centre img {
     width: 100%;
   }
-  
-  main .centre div{
+
+  main .centre div {
     width: 100%;
   }
 }
 
-#display{
+#display {
   padding: 120px 10px 50px 10px;
 }
 
-section.display{
+section.display {
   display: flex;
   border-radius: 10px;
   box-shadow: 0 0 400px rgba(128, 128, 128, 0.183);
@@ -178,51 +180,52 @@ section.display{
   overflow: hidden;
 }
 
-section.display .menu{
+section.display .menu {
   width: 25%;
   background-color: green;
   padding: 10px;
   color: white;
 }
 
-section.display .menu ul{
+section.display .menu ul {
   display: flex;
   flex-direction: column;
   gap: 2px;
 }
 
-section.display .menu li{
+section.display .menu li {
   list-style: none;
   padding: 8px 10px;
   border-radius: 5px;
   cursor: pointer;
 }
 
-section.display .menu li.active, section.display .menu li:hover{
+section.display .menu li.active,
+section.display .menu li:hover {
   background-color: greenyellow;
-  color:green;
+  color: green;
 }
 
-section.display .screen{
+section.display .screen {
   width: 70%;
 }
 
-section.display .screen .indi-screen{
+section.display .screen .indi-screen {
   padding: 10px;
   display: none;
   height: 100%;
 }
 
-section.display .screen .indi-screen:nth-child(1){
+section.display .screen .indi-screen:nth-child(1) {
   display: block;
 }
 
-section.display .screen .sponsorship h1{
+section.display .screen .sponsorship h1 {
   width: 100%;
   text-align: center;
 }
 
-section.display .screen .sponsorship li{
+section.display .screen .sponsorship li {
   list-style: "➡️";
   font-family: "Protest Riot", sans-serif;
   font-weight: 400;
@@ -232,46 +235,47 @@ section.display .screen .sponsorship li{
   color: purple;
 }
 
-section.display .screen .sponsorship img{
+section.display .screen .sponsorship img {
   width: 100%;
   border-radius: 10px;
   margin-top: 10px;
 }
 
-section.display .screen .indi-screen h1{
+section.display .screen .indi-screen h1 {
   margin-bottom: 10px;
   width: 100%;
   text-align: center;
 }
 
-section.display .screen .indi-screen h3{
+section.display .screen .indi-screen h3 {
   margin-top: 5px;
   color: green;
 }
 
-section.display .screen .contact h4{
+section.display .screen .contact h4 {
   margin-top: 5px;
 }
 
-section.display .screen .contact .container{
+section.display .screen .contact .container {
   display: flex;
   gap: 20px;
 }
 
-section.display .screen .contact .container .indi-contact{
+section.display .screen .contact .container .indi-contact {
   width: 50%;
 }
 
-section.display .screen .contact p{
+section.display .screen .contact p {
   text-align: left;
 }
 
-section.display .screen .registration img, section.display .screen .schedule img{
+section.display .screen .registration img,
+section.display .screen .schedule img {
   width: 100%;
   border-radius: 10px;
 }
 
-section.display .screen .important-dates p{
+section.display .screen .important-dates p {
   border: 1px solid gray;
   margin-bottom: 5px;
   border-radius: 5px;
@@ -284,19 +288,30 @@ section.display .screen .important-dates p{
   font-weight: bold;
 }
 
-section.display .screen .important-dates span{
+section.display .screen .important-dates span {
   color: white;
   background: linear-gradient(45deg, orange, green);
   padding: 8px 10px;
   border-radius: 0 5px 5px 0;
 }
 
-section.display .screen .organizing-committee li{
+section.display .screen .organizing-committee li {
   list-style: none;
 }
 
-section.display .screen .guidelines li{
+section.display .screen .guidelines li {
   margin-bottom: 10px;
+}
+
+section.display .screen .registration .price {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.445);
+  box-shadow: 0 0 10px rgba(128, 128, 128, 0.347);
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .button {
@@ -332,78 +347,83 @@ section.display .screen .guidelines li{
   width: 100%;
   height: inherit;
   border-radius: inherit;
-  background: linear-gradient(
-    82.3deg,
-    rgb(233, 172, 93) 10.8%,
-    rgb(2, 183, 32) 94.3%
-  );
+  background: linear-gradient(82.3deg,
+      rgb(233, 172, 93) 10.8%,
+      rgb(2, 183, 32) 94.3%);
   transition: all 0.475s;
 }
 
 
-@media(max-width:700px){
-  #display{
+@media(max-width:700px) {
+  #display {
     padding: 10px;
   }
-  section.display{
-    margin-block:0;
+
+  section.display {
+    margin-block: 0;
     flex-direction: column;
   }
-  section.display .menu{
+
+  section.display .menu {
     width: 100%;
   }
-  section.display .screen{
+
+  section.display .screen {
     width: 100%;
   }
-  section.display .screen .important-dates p{
+
+  section.display .screen .important-dates p {
     flex-direction: column;
     padding: 0;
     text-align: left;
   }
-  section.display .screen .important-dates span{
+
+  section.display .screen .important-dates span {
     width: 100%;
     border-radius: 0;
     text-align: center;
   }
 }
 
-footer{
+footer {
   background-color: #212121;
   color: gray;
   padding: 10px;
 }
 
-footer .centre{
+footer .centre {
   display: flex;
   gap: 20px;
   margin-block: 30px;
 }
 
-footer .centre div:nth-child(1){
+footer .centre div:nth-child(1) {
   width: 70%;
 }
 
-footer .centre div:nth-child(2){
+footer .centre div:nth-child(2) {
   width: 30%;
 }
 
-footer h4{
+footer h4 {
   margin-bottom: 10px;
 }
 
-footer li{
+footer li {
   list-style: none;
   cursor: pointer;
 }
 
-@media(max-width:700px){
-  footer .centre{
+@media(max-width:700px) {
+  footer .centre {
     flex-direction: column;
   }
-  footer .centre div:nth-child(1){
+
+  footer .centre div:nth-child(1) {
     width: 100%;
   }
-  footer .centre div:nth-child(2){
+
+  footer .centre div:nth-child(2) {
     width: 100%;
   }
 }
