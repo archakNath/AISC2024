@@ -98,11 +98,21 @@ section {
   }
 }
 
+.watermark{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
 main {
-  background-image: url(/assets/images/home_section_bg.jpg);
+  background: linear-gradient(to right, #7dfb7b2f, #0bcbfb3b);
   background-size: cover;
   background-position: center;
   padding-top: 110px;
+  position: relative;
 }
 
 main marquee {
@@ -170,12 +180,13 @@ main p {
 
 #display {
   padding: 120px 10px 50px 10px;
+  background: linear-gradient(to right, #7dfb7b2f, #0bcbfb3b);
 }
 
 section.display {
   display: flex;
   border-radius: 10px;
-  box-shadow: 0 0 400px rgba(128, 128, 128, 0.183);
+  box-shadow: 0 0 400px rgb(128 128 128 / 48%);
   padding: 0;
   overflow: hidden;
 }
