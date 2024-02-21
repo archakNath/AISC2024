@@ -98,11 +98,21 @@ section {
   }
 }
 
+.watermark{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
 main {
-  background-image: url(/assets/images/home_section_bg.jpg);
+  background: linear-gradient(to right, #7dfb7b2f, #0bcbfb3b);
   background-size: cover;
   background-position: center;
   padding-top: 110px;
+  position: relative;
 }
 
 main marquee {
@@ -170,12 +180,13 @@ main p {
 
 #display {
   padding: 120px 10px 50px 10px;
+  background: linear-gradient(to right, #7dfb7b2f, #0bcbfb3b);
 }
 
 section.display {
   display: flex;
   border-radius: 10px;
-  box-shadow: 0 0 400px rgba(128, 128, 128, 0.183);
+  box-shadow: 0 0 400px rgb(128 128 128 / 48%);
   padding: 0;
   overflow: hidden;
 }
@@ -298,8 +309,67 @@ section.display .screen .organizing-committee li {
   list-style: none;
 }
 
-section.display .screen .guidelines li {
+section.display .screen .guidelines p:nth-child(2){
+  font-weight: bold;
+}
+
+section.display .screen .guidelines p:nth-child(3) {
+  color: #E36400;
+  font-weight: bold;
+}
+
+section.display .screen .guidelines li:nth-child(4){
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+section.display .screen .guidelines a{
+  color: #00A6FF;
+}
+
+section.display .screen .registration .price-header{
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 10px;
   margin-bottom: 10px;
+  font-weight: bolder;
+  gap: 20px;
+  color: green;
+  font-size: 19px;
+}
+
+section.display .screen .registration .payment-details{
+  display: flex;
+}
+
+section.display .screen .registration .payment-content{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+section.display .screen .registration .payment-content h2{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+section.display .screen .registration .payment-content .indi-content{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: rgba(0, 128, 0, 0.149);
+  padding: 5px 8px;
+  border-radius: 10px;
+}
+
+
+section.display .screen .registration .payment-content .indi-content p:nth-child(2n){
+  text-align: right;
+}
+
+section.display .screen .registration img{
+  max-width: 300px;
 }
 
 section.display .screen .registration .price {
@@ -386,6 +456,14 @@ section.display .screen .registration .price p{
     width: 100%;
     border-radius: 0;
     text-align: center;
+  }
+
+  section.display .screen .registration .price{
+    font-size: 13px;
+  }
+
+  section.display .screen .registration .payment-details{
+    flex-direction: column;
   }
 }
 
