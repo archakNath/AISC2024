@@ -305,6 +305,11 @@ section.display .screen .important-dates span {
   border-radius: 0 5px 5px 0;
 }
 
+.line-through{
+  text-decoration: line-through;
+  background: transparent;
+}
+
 section.display .screen .organizing-committee li {
   list-style: none;
 }
