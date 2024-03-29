@@ -43,3 +43,95 @@ function scrollToSection() {
     var targetSection = document.getElementById('display');
     targetSection.scrollIntoView({ behavior: 'smooth' });
   }
+
+const speakers = [
+    {
+        'name': 'Assoc Prof Anupam Chattopadhyay',
+        'position': 'Associate Professor, School of Computer Science and Engineering',
+        'contact': '',
+        'image': '',
+        'link': ''
+    },
+    {
+        'name': 'P. Ram',
+        'position': '',
+        'contact': '',
+        'image': '',
+        'link': ''
+    },
+    {
+        'name': 'Indivar Gupta',
+        'position': 'PPD',
+        'contact': '',
+        'image': '',
+        'link': ''
+    },
+    {
+        'name': 'Bimal Roy',
+        'position': '',
+        'contact': '',
+        'image': '',
+        'link': ''
+    },
+    {
+        'name': 'Tino cortesi',
+        'position': '',
+        'contact': '',
+        'image': '',
+        'link': ''
+    },
+    {
+        'name': 'Aditya Kr Sinha',
+        'position': '',
+        'contact': '',
+        'image': '',
+        'link': ''
+    },
+    {
+        'name': 'Shri Sanjay Kumar Das',
+        'position': 'W.B.C.S (Exe.), Managing Director',
+        'contact': '',
+        'image': '',
+        'link': ''
+    },
+]
+
+const speakerList = document.querySelector('.speaker-list');
+speakers.forEach(speaker => {
+    const indiSpeaker = document.createElement('div');
+    const speakerImage = document.createElement('img');
+    const speakerName = document.createElement('h2');
+    const speakerPosition = document.createElement('p');
+    const speakerLink = document.createElement('a');
+
+
+    indiSpeaker.setAttribute('class', 'indi-speaker');
+    if(speaker.image == ''){
+        speakerImage.src = '/assets/images/default-image.png';
+    } else {
+        speakerImage.src = speaker.image;
+    }
+    indiSpeaker.appendChild(speakerImage);
+    speakerName.textContent = speaker.name;
+    indiSpeaker.appendChild(speakerName);
+    if(speaker.position != ''){
+        speakerPosition.textContent = speaker.position;
+        indiSpeaker.appendChild(speakerPosition);
+    }
+    if(speaker.link != ''){
+        speakerLink.setAttribute('href', speaker.link);
+        speakerLink.textContent = 'Learn More';
+        indiSpeaker.appendChild(speakerLink);
+    }
+
+    speakerList.appendChild(indiSpeaker);
+});
+
+{/* <div class="speaker-list">
+    <div class="indi-speaker">
+        <img src="/assets/images/default-image.png" alt="">
+        <h2>Assoc Prof Anupam Chattopadhyay</h2>
+        <p>Associate Professor, School of Computer Science and Engineering</p>
+        <a href="#">Learn More</a>
+    </div>
+</div> */}

@@ -222,6 +222,44 @@ section.display .screen .indi-screen:nth-child(1) {
   display: block;
 }
 
+section.display .screen .speakers .speaker-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+section.display .screen .speakers .indi-speaker{
+  padding: 10px;
+  border-radius: 10px;
+  width: 30%;
+  background-color: white;
+}
+
+section.display .screen .speakers .indi-speaker img{
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+section.display .screen .speakers .indi-speaker h2{
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+section.display .screen .speakers .indi-speaker p{
+  text-align: left;
+  line-height: 1;
+  font-size: 14px;
+}
+
+@media(max-width: 700px){
+  section.display .screen .speakers .indi-speaker{
+    width: 48%;
+  }
+}
+
 section.display .screen .sponsorship h1 {
   width: 100%;
   text-align: center;
