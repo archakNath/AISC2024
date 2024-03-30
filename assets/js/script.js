@@ -44,57 +44,57 @@ function scrollToSection() {
     targetSection.scrollIntoView({ behavior: 'smooth' });
   }
 
-const speakers = [
-    {
-        'name': 'Assoc Prof Anupam Chattopadhyay',
-        'position': 'Associate Professor, School of Computer Science and Engineering',
-        'contact': '',
-        'image': '',
-        'link': ''
-    },
-    {
-        'name': 'P. Ram',
-        'position': '',
-        'contact': '',
-        'image': '',
-        'link': ''
-    },
-    {
-        'name': 'Indivar Gupta',
-        'position': 'PPD',
-        'contact': '',
-        'image': '',
-        'link': ''
-    },
-    {
-        'name': 'Bimal Roy',
-        'position': '',
-        'contact': '',
-        'image': '',
-        'link': ''
-    },
-    {
-        'name': 'Tino cortesi',
-        'position': '',
-        'contact': '',
-        'image': '',
-        'link': ''
-    },
-    {
-        'name': 'Aditya Kr Sinha',
-        'position': '',
-        'contact': '',
-        'image': '',
-        'link': ''
-    },
-    {
-        'name': 'Shri Sanjay Kumar Das',
-        'position': 'W.B.C.S (Exe.), Managing Director',
-        'contact': '',
-        'image': '',
-        'link': ''
-    },
-]
+// const speakers = [
+//     {
+//         'name': 'Assoc Prof Anupam Chattopadhyay',
+//         'position': 'Associate Professor, School of Computer Science and Engineering',
+//         'contact': '',
+//         'image': '',
+//         'link': ''
+//     },
+//     {
+//         'name': 'P. Ram',
+//         'position': '',
+//         'contact': '',
+//         'image': '',
+//         'link': ''
+//     },
+//     {
+//         'name': 'Indivar Gupta',
+//         'position': 'PPD',
+//         'contact': '',
+//         'image': '',
+//         'link': ''
+//     },
+//     {
+//         'name': 'Bimal Roy',
+//         'position': '',
+//         'contact': '',
+//         'image': '',
+//         'link': ''
+//     },
+//     {
+//         'name': 'Tino cortesi',
+//         'position': '',
+//         'contact': '',
+//         'image': '',
+//         'link': ''
+//     },
+//     {
+//         'name': 'Aditya Kr Sinha',
+//         'position': '',
+//         'contact': '',
+//         'image': '',
+//         'link': ''
+//     },
+//     {
+//         'name': 'Shri Sanjay Kumar Das',
+//         'position': 'W.B.C.S (Exe.), Managing Director',
+//         'contact': '',
+//         'image': '',
+//         'link': ''
+//     },
+// ]
 
 const speakerList = document.querySelector('.speaker-list');
 speakers.forEach(speaker => {
