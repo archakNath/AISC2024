@@ -44,57 +44,57 @@ function scrollToSection() {
     targetSection.scrollIntoView({ behavior: 'smooth' });
   }
 
-// const speakers = [
-//     {
-//         'name': 'Assoc Prof Anupam Chattopadhyay',
-//         'position': 'Associate Professor, School of Computer Science and Engineering',
-//         'contact': '',
-//         'image': '',
-//         'link': ''
-//     },
-//     {
-//         'name': 'P. Ram',
-//         'position': '',
-//         'contact': '',
-//         'image': '',
-//         'link': ''
-//     },
-//     {
-//         'name': 'Indivar Gupta',
-//         'position': 'PPD',
-//         'contact': '',
-//         'image': '',
-//         'link': ''
-//     },
-//     {
-//         'name': 'Bimal Roy',
-//         'position': '',
-//         'contact': '',
-//         'image': '',
-//         'link': ''
-//     },
-//     {
-//         'name': 'Tino cortesi',
-//         'position': '',
-//         'contact': '',
-//         'image': '',
-//         'link': ''
-//     },
-//     {
-//         'name': 'Aditya Kr Sinha',
-//         'position': '',
-//         'contact': '',
-//         'image': '',
-//         'link': ''
-//     },
-//     {
-//         'name': 'Shri Sanjay Kumar Das',
-//         'position': 'W.B.C.S (Exe.), Managing Director',
-//         'contact': '',
-//         'image': '',
-//         'link': ''
-//     },
-// ]
+const speakers = [
+    {
+        'name': 'Assoc Prof Anupam Chattopadhyay',
+        'position': 'Associate Professor, School of Computer Science and Engineering',
+        'contact': '',
+        'image': '/assets/images/speaker/anupam.jpg',
+        'link': 'https://dr.ntu.edu.sg/cris/rp/rp01076'
+    },
+    {
+        'name': 'Dr. Prahlad Ram',
+        'position': 'Scientist, Scince and Engineering Research Board',
+        'contact': '',
+        'image': '/assets/images/speaker/prahlad.jpg',
+        'link': 'https://www.linkedin.com/in/dr-prahlad-ram-a0624a154/?originalSubdomain=in'
+    },
+    {
+        'name': 'Indivar Gupta',
+        'position': 'Defence Research and Development Organization',
+        'contact': '',
+        'image': '/assets/images/speaker/indivir.jpg',
+        'link': 'https://scholar.google.co.in/citations?user=-bzRyQMAAAAJ&hl=en'
+    },
+    {
+        'name': 'Bimal Roy',
+        'position': 'ISI, Kolkata',
+        'contact': '',
+        'image': '/assets/images/speaker/bimal.jpg',
+        'link': 'https://www.isical.ac.in/~bimal/'
+    },
+    {
+        'name': 'Tino Cortesi',
+        'position': 'Full Professor, Università Ca’ Fioscari Venezia',
+        'contact': '',
+        'image': '/assets/images/speaker/tino.jpg',
+        'link': 'https://www.dsi.unive.it/~cortesi/cortesi.html'
+    },
+    {
+        'name': 'Aditya Kr Sinha',
+        'position': 'Director at C-DAC Patna & C-DAC Kolkata',
+        'contact': '',
+        'image': '/assets/images/speaker/sinha.jpeg',
+        'link': 'https://www.linkedin.com/in/adityaksinha/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'
+    },
+    {
+        'name': 'Shri Sanjay Kumar Das',
+        'position': 'W.B.C.S (Exe.), Managing Director',
+        'contact': '',
+        'image': '/assets/images/speaker/sanjay.jpeg',
+        'link': 'https://www.linkedin.com/in/sanjaykumardas/?originalSubdomain=in'
+    },
+]
 
 const speakerList = document.querySelector('.speaker-list');
 speakers.forEach(speaker => {
