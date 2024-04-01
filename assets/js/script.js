@@ -119,7 +119,9 @@ speakers.forEach(speaker => {
         indiSpeaker.appendChild(speakerPosition);
     }
     if(speaker.link != ''){
-        speakerLink.setAttribute('href', speaker.link);
+        speakerLink.onclick = () => {
+            window.open(speaker.link, '_blank')
+        }
         speakerLink.textContent = 'Learn More';
         indiSpeaker.appendChild(speakerLink);
     }

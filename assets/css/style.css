@@ -254,6 +254,11 @@ section.display .screen .speakers .indi-speaker p{
   font-size: 14px;
 }
 
+section.display .screen .speakers .indi-speaker a{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 @media(max-width: 700px){
   section.display .screen .speakers .indi-speaker{
     width: 48%;
