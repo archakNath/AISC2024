@@ -34,8 +34,9 @@ li {
 }
 
 marquee{
-  color: green;
-  background: linear-gradient(to right, #7dfb7b13, #0bcbfb25);
+  color: yellow;
+  background-color: green;
+  font-size: 20px;
 }
 
 .centre {

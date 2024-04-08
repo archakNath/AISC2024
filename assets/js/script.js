@@ -42,7 +42,7 @@ download_button.onclick = () => {
 function scrollToSection() {
     var targetSection = document.getElementById('display');
     targetSection.scrollIntoView({ behavior: 'smooth' });
-  }
+}
 
 const speakers = [
     {
@@ -65,6 +65,13 @@ const speakers = [
         'contact': '',
         'image': '/assets/images/speaker/indivir.jpg',
         'link': 'https://scholar.google.co.in/citations?user=-bzRyQMAAAAJ&hl=en'
+    },
+    {
+        'name': 'Dr. Partha Pratim Das (PPD)',
+        'position': 'Professor, Dept. of CSE, IIT Kharagpur',
+        'contact': '',
+        'image': '/assets/images/speaker/ppd.png',
+        'link': 'https://www.linkedin.com/in/ppdas/'
     },
     {
         'name': 'Bimal Roy',
@@ -106,7 +113,7 @@ speakers.forEach(speaker => {
 
 
     indiSpeaker.setAttribute('class', 'indi-speaker');
-    if(speaker.image == ''){
+    if (speaker.image == '') {
         speakerImage.src = '/assets/images/default-image.png';
     } else {
         speakerImage.src = speaker.image;
@@ -114,11 +121,11 @@ speakers.forEach(speaker => {
     indiSpeaker.appendChild(speakerImage);
     speakerName.textContent = speaker.name;
     indiSpeaker.appendChild(speakerName);
-    if(speaker.position != ''){
+    if (speaker.position != '') {
         speakerPosition.textContent = speaker.position;
         indiSpeaker.appendChild(speakerPosition);
     }
-    if(speaker.link != ''){
+    if (speaker.link != '') {
         speakerLink.onclick = () => {
             window.open(speaker.link, '_blank')
         }
