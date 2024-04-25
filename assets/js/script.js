@@ -46,11 +46,25 @@ function scrollToSection() {
 
 const speakers = [
     {
+        'name': 'Prof. Lau Sian Lun',
+        'position': 'Department of Computing and Information Systems, Sunway University',
+        'contact': '',
+        'image': '/assets/images/speaker/lau.jpeg',
+        'link': 'https://studyonline.sunway.edu.my/faculty/professor-lau-sian-lun'
+    },
+    {
         'name': 'Assoc Prof Anupam Chattopadhyay',
         'position': 'Associate Professor, School of Computer Science and Engineering',
         'contact': '',
         'image': '/assets/images/speaker/anupam.jpg',
         'link': 'https://dr.ntu.edu.sg/cris/rp/rp01076'
+    },
+    {
+        'name': 'Tino Cortesi',
+        'position': 'Full Professor, Università Ca’ Fioscari Venezia',
+        'contact': '',
+        'image': '/assets/images/speaker/tino.jpg',
+        'link': 'https://www.dsi.unive.it/~cortesi/cortesi.html'
     },
     {
         'name': 'Dr. Prahlad Ram',
@@ -81,13 +95,6 @@ const speakers = [
         'link': 'https://www.isical.ac.in/~bimal/'
     },
     {
-        'name': 'Tino Cortesi',
-        'position': 'Full Professor, Università Ca’ Fioscari Venezia',
-        'contact': '',
-        'image': '/assets/images/speaker/tino.jpg',
-        'link': 'https://www.dsi.unive.it/~cortesi/cortesi.html'
-    },
-    {
         'name': 'Aditya Kr Sinha',
         'position': 'Director at C-DAC Patna & C-DAC Kolkata',
         'contact': '',
@@ -114,13 +121,6 @@ const speakers = [
         'contact': '',
         'image': '/assets/images/speaker/saptashri.jpeg',
         'link': 'https://scholar.google.com/citations?user=kdlCB6sAAAAJ&hl=enc:\Users\archa\Downloads\saptashri.jpeg'
-    },
-    {
-        'name': 'Prof. Lau Sian Lun',
-        'position': 'Department of Computing and Information Systems, Sunway University',
-        'contact': '',
-        'image': '/assets/images/speaker/lau.jpeg',
-        'link': 'https://studyonline.sunway.edu.my/faculty/professor-lau-sian-lun'
     },
 ]
 
