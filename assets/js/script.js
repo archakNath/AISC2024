@@ -36,7 +36,7 @@ for (let i = 0; i < footer_links.length; i++) {
 }
 
 download_button.onclick = () => {
-    window.open("https://firebasestorage.googleapis.com/v0/b/artco-bb7b5.appspot.com/o/CFP-%20AISC%C2%A02024.pdf?alt=media&token=90480a67-ae66-44ff-ae0a-fbf539ce1223", "_blank")
+    window.open("https://firebasestorage.googleapis.com/v0/b/artco-bb7b5.appspot.com/o/CFP-%20AISC%C2%A02024.pdf?alt=media&token=4a5ae9b0-c296-412c-8310-d01ea0833602", "_blank")
 }
 
 function scrollToSection() {
@@ -101,6 +101,27 @@ const speakers = [
         'image': '/assets/images/speaker/sanjay.jpeg',
         'link': 'https://www.linkedin.com/in/sanjaykumardas/?originalSubdomain=in'
     },
+    {
+        'name': 'Sourabh Mukherjee',
+        'position': 'Lead - Modern Data Architecture, Accenture',
+        'contact': '',
+        'image': '/assets/images/speaker/sourabh.jpeg',
+        'link': 'https://www.linkedin.com/in/sourabhmukherjee/'
+    },
+    {
+        'name': 'Dr. Saptarsi Goswami',
+        'position': 'Bangabasi Morning College',
+        'contact': '',
+        'image': '/assets/images/speaker/saptashri.jpeg',
+        'link': 'https://scholar.google.com/citations?user=kdlCB6sAAAAJ&hl=enc:\Users\archa\Downloads\saptashri.jpeg'
+    },
+    {
+        'name': 'Prof. Lau Sian Lun',
+        'position': 'Department of Computing and Information Systems, Sunway University',
+        'contact': '',
+        'image': '/assets/images/speaker/lau.jpeg',
+        'link': 'https://studyonline.sunway.edu.my/faculty/professor-lau-sian-lun'
+    },
 ]
 
 const speakerList = document.querySelector('.speaker-list');
@@ -129,7 +150,7 @@ speakers.forEach(speaker => {
         speakerLink.onclick = () => {
             window.open(speaker.link, '_blank')
         }
-        speakerLink.textContent = 'Learn More';
+        speakerLink.textContent = 'More Details';
         indiSpeaker.appendChild(speakerLink);
     }
 
