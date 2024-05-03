@@ -33,6 +33,12 @@ li {
   line-height: 25px;
 }
 
+marquee{
+  color: yellow;
+  background-color: green;
+  font-size: 20px;
+}
+
 .centre {
   max-width: 1000px;
   margin-inline: auto;
@@ -42,9 +48,9 @@ li {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 10px;
   box-shadow: 0 0 10px gray;
-  position: fixed;
   width: 100%;
   background-color: white;
   z-index: 2;
@@ -60,7 +66,7 @@ header div {
 }
 
 header img.logo {
-  height: 100%;
+  height: 60%;
   width: fit-content;
 }
 
@@ -81,20 +87,14 @@ section {
 
 @media(max-width:700px) {
 
-  header h1 {
-    font-size: 20px;
+  header img.logo{
+    width: 30%;
+    height: 150%;
+    object-fit: contain;
   }
-}
-
-@media(max-width:450px) {
-  header h1 {
-    font-size: 15px;
-  }
-}
-
-@media(max-width:370px) {
-  header h1 {
-    font-size: 15px;
+  header{
+    flex-wrap: wrap;
+    gap: 10px;
   }
 }
 
@@ -111,7 +111,6 @@ main {
   background: linear-gradient(to right, #7dfb7b2f, #0bcbfb3b);
   background-size: cover;
   background-position: center;
-  padding-top: 110px;
   position: relative;
 }
 
@@ -156,13 +155,6 @@ main p {
 
 @media(max-width:700px) {
 
-  main {
-    padding-top: 90px;
-  }
-
-  header div:nth-child(1) .logo:nth-child(2) {
-    display: none;
-  }
 
   main .centre {
     flex-direction: column;
@@ -229,6 +221,49 @@ section.display .screen .indi-screen {
 
 section.display .screen .indi-screen:nth-child(1) {
   display: block;
+}
+
+section.display .screen .speakers .speaker-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+section.display .screen .speakers .indi-speaker{
+  padding: 10px;
+  border-radius: 10px;
+  width: 30%;
+  background-color: white;
+}
+
+section.display .screen .speakers .indi-speaker img{
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+section.display .screen .speakers .indi-speaker h2{
+  margin-top: 10px;
+  font-size: 17px;
+}
+
+section.display .screen .speakers .indi-speaker p{
+  text-align: left;
+  line-height: 1;
+  font-size: 14px;
+}
+
+section.display .screen .speakers .indi-speaker a{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media(max-width: 700px){
+  section.display .screen .speakers .indi-speaker{
+    width: 48%;
+  }
 }
 
 section.display .screen .sponsorship h1 {
