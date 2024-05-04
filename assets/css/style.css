@@ -54,7 +54,7 @@ header {
   width: 100%;
   background-color: white;
   z-index: 2;
-  background-image: url(/assets/images/laptop-header.png);
+  background-image: url(/assets/images/laptop-header\ copy.png);
   background-size: cover;
   background-position: center;
   padding-block: 10px;
@@ -94,7 +94,7 @@ section {
   }
   header{
     aspect-ratio: 3;
-    background-image: url(/assets/images/mobile-header.png);
+    background-image: url(/assets/images/mobile-header\ copy.png);
   }
 }
 
