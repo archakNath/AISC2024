@@ -54,7 +54,7 @@ header {
   width: 100%;
   background-color: white;
   z-index: 2;
-  background-image: url(/assets/images/howrah_bridge_image.jpg);
+  background-image: url(/assets/images/laptop-header.png);
   background-size: cover;
   background-position: center;
   padding-block: 10px;
@@ -93,8 +93,8 @@ section {
     object-fit: contain;
   }
   header{
-    flex-wrap: wrap;
-    gap: 10px;
+    aspect-ratio: 3;
+    background-image: url(/assets/images/mobile-header.png);
   }
 }
 
