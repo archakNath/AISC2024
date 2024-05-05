@@ -64,7 +64,7 @@ const speakers = [
         'position': 'Full Professor, Università Ca’ Fioscari Venezia',
         'contact': '',
         'image': '/assets/images/speaker/tino.jpg',
-        'link': 'https://www.dsi.unive.it/~cortesi/cortesi.html'
+        'link': 'https://www.unive.it/data/people/5591776'
     },
     {
         'name': 'Dr. Prahlad Ram',
