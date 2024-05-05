@@ -130,9 +130,13 @@ speakers.forEach(speaker => {
     const speakerImage = document.createElement('img');
     const speakerName = document.createElement('h2');
     const speakerPosition = document.createElement('p');
-    const speakerLink = document.createElement('a');
+    const speakerLink = document.createElement('div');
+    const speakerLinkImage = document.createElement('img');
+    const speakerLinkText = document.createElement('p');
 
 
+    speakerLinkImage.src = '/assets/images/menu-icon.svg';
+    speakerLinkText.textContent = 'More Info';
     indiSpeaker.setAttribute('class', 'indi-speaker');
     if (speaker.image == '') {
         speakerImage.src = '/assets/images/default-image.png';
@@ -150,7 +154,8 @@ speakers.forEach(speaker => {
         speakerLink.onclick = () => {
             window.open(speaker.link, '_blank')
         }
-        speakerLink.textContent = 'More Details';
+        speakerLink.appendChild(speakerLinkImage);
+        speakerLink.appendChild(speakerLinkText);
         indiSpeaker.appendChild(speakerLink);
     }
 
@@ -158,10 +163,10 @@ speakers.forEach(speaker => {
 });
 
 {/* <div class="speaker-list">
-    <div class="indi-speaker">
-        <img src="/assets/images/default-image.png" alt="">
-        <h2>Assoc Prof Anupam Chattopadhyay</h2>
-        <p>Associate Professor, School of Computer Science and Engineering</p>
-        <a href="#">Learn More</a>
-    </div>
-</div> */}
+        <div class="indi-speaker">
+            <img src="/assets/images/default-image.png" alt="">
+            <h2>Assoc Prof Anupam Chattopadhyay</h2>
+            <p>Associate Professor, School of Computer Science and Engineering</p>
+            <div><img src="/assets/images/menu-icon.svg" alt=""> <p>More Info</p></div>
+        </div>
+    </div> */}

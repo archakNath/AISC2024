@@ -235,6 +235,8 @@ section.display .screen .speakers .indi-speaker{
   border-radius: 10px;
   width: 30%;
   background-color: white;
+  position: relative;
+  padding-bottom: 50px;
 }
 
 section.display .screen .speakers .indi-speaker img{
@@ -258,6 +260,35 @@ section.display .screen .speakers .indi-speaker p{
 section.display .screen .speakers .indi-speaker a{
   text-decoration: underline;
   cursor: pointer;
+}
+
+section.display .screen .speakers .indi-speaker div{
+  background-color: rgb(231, 231, 231);
+  border-radius: 10px;
+  padding: 3px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  /* gap: 5px; */
+  cursor: pointer;
+  transition: all .2s;
+  position: absolute;
+  bottom: 10px;
+  width: 90%;
+}
+section.display .screen .speakers .indi-speaker div:hover{
+  background-color: #292D32;
+  color: white;
+}
+
+section.display .screen .speakers .indi-speaker div img{
+  width: 30px;
+}
+section.display .screen .speakers .indi-speaker div p{
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  position: absolute;
 }
 
 @media(max-width: 700px){
