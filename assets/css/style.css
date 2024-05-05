@@ -295,6 +295,9 @@ section.display .screen .speakers .indi-speaker div p{
   section.display .screen .speakers .indi-speaker{
     width: 48%;
   }
+  section.display .screen .speakers .indi-speaker div img{
+    width: 22px;
+  }
 }
 
 section.display .screen .sponsorship h1 {
