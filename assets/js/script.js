@@ -135,7 +135,7 @@ const speakers = [
         'name': 'Arijit Mukherjee',
         'position': 'Principal Scientist, TCS Research',
         'contact': '',
-        'image': '/assets/images/speaker/saptashri.jpeg',
+        'image': '/assets/images/speaker/arijit.jpg',
         'link': 'https://scholar.google.co.in/citations?user=99_nlsMAAAAJ&hl=en'
     },
 ]
