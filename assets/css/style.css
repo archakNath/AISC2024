@@ -268,7 +268,7 @@ section.display .screen .speakers .indi-speaker a{
 }
 
 section.display .screen .speakers .indi-speaker div{
-  background-color: rgb(231, 231, 231);
+  background: rgb(231, 231, 231);
   border-radius: 10px;
   padding: 3px;
   margin-top: 5px;
@@ -282,8 +282,7 @@ section.display .screen .speakers .indi-speaker div{
   width: 90%;
 }
 section.display .screen .speakers .indi-speaker div:hover{
-  background-color: #292D32;
-  color: white;
+  background: linear-gradient(to right, #7DFA7C, #0DCCF9);
 }
 
 section.display .screen .speakers .indi-speaker div img{
