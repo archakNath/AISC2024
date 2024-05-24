@@ -223,17 +223,22 @@ section.display .screen .indi-screen:nth-child(1) {
   display: block;
 }
 
-section.display .screen .speakers .speaker-list{
+section.display .screen .speakers h3{
+  margin-left: 15px;
+}
+
+section.display .screen .speakers .speaker-list, section.display .screen .speakers .international-speaker-list{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   gap: 10px;
+  margin-top: 10px;
 }
 
 section.display .screen .speakers .indi-speaker{
   padding: 10px;
   border-radius: 10px;
-  width: 30%;
+  width: 32%;
   background-color: white;
   position: relative;
   padding-bottom: 50px;
@@ -298,6 +303,11 @@ section.display .screen .speakers .indi-speaker div p{
   section.display .screen .speakers .indi-speaker div img{
     width: 22px;
   }
+}
+
+section.display .screen .tutorial img{
+  width: 100%;
+  border-radius: 10px;
 }
 
 section.display .screen .sponsorship h1 {

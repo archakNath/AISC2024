@@ -44,7 +44,7 @@ function scrollToSection() {
     targetSection.scrollIntoView({ behavior: 'smooth' });
 }
 
-const speakers = [
+const intSpeakers = [
     {
         'name': 'Prof. Lau Sian Lun',
         'position': 'Department of Computing and Information Systems, Sunway University',
@@ -73,6 +73,8 @@ const speakers = [
         'image': '/assets/images/speaker/regan.jpg',
         'link': 'https://cse.buffalo.edu/~regan/'
     },
+]
+const speakers = [
     {
         'name': 'Dr. Prahlad Ram',
         'position': 'Scientist, Scince and Engineering Research Board',
@@ -129,9 +131,53 @@ const speakers = [
         'image': '/assets/images/speaker/saptashri.jpeg',
         'link': 'https://scholar.google.com/citations?user=kdlCB6sAAAAJ&hl=enc:\Users\archa\Downloads\saptashri.jpeg'
     },
+    {
+        'name': 'Arijit Mukherjee',
+        'position': 'Principal Scientist, TCS Research',
+        'contact': '',
+        'image': '/assets/images/speaker/saptashri.jpeg',
+        'link': 'https://scholar.google.co.in/citations?user=99_nlsMAAAAJ&hl=en'
+    },
 ]
 
+const interspeakerList = document.querySelector('.international-speaker-list');
 const speakerList = document.querySelector('.speaker-list');
+intSpeakers.forEach(speaker => {
+    const indiSpeaker = document.createElement('div');
+    const speakerImage = document.createElement('img');
+    const speakerName = document.createElement('h2');
+    const speakerPosition = document.createElement('p');
+    const speakerLink = document.createElement('div');
+    const speakerLinkImage = document.createElement('img');
+    const speakerLinkText = document.createElement('p');
+
+
+    speakerLinkImage.src = '/assets/images/menu-icon.svg';
+    speakerLinkText.textContent = 'More Info';
+    indiSpeaker.setAttribute('class', 'indi-speaker');
+    if (speaker.image == '') {
+        speakerImage.src = '/assets/images/default-image.png';
+    } else {
+        speakerImage.src = speaker.image;
+    }
+    indiSpeaker.appendChild(speakerImage);
+    speakerName.textContent = speaker.name;
+    indiSpeaker.appendChild(speakerName);
+    if (speaker.position != '') {
+        speakerPosition.textContent = speaker.position;
+        indiSpeaker.appendChild(speakerPosition);
+    }
+    if (speaker.link != '') {
+        speakerLink.onclick = () => {
+            window.open(speaker.link, '_blank')
+        }
+        speakerLink.appendChild(speakerLinkImage);
+        speakerLink.appendChild(speakerLinkText);
+        indiSpeaker.appendChild(speakerLink);
+    }
+
+    interspeakerList.appendChild(indiSpeaker);
+});
 speakers.forEach(speaker => {
     const indiSpeaker = document.createElement('div');
     const speakerImage = document.createElement('img');
