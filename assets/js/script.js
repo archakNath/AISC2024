@@ -170,3 +170,9 @@ speakers.forEach(speaker => {
             <div><img src="/assets/images/menu-icon.svg" alt=""> <p>More Info</p></div>
         </div>
     </div> */}
+
+// Register link 
+const registerBtn = document.getElementById('registerButton');
+registerBtn.onclick = () => {
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSea7xljsu2ILAIqwOVEgLE7rw0Y7e2R3JGVDuvZ-eBXEMkPiQ/viewform?usp=pp_url', '_blank')
+}

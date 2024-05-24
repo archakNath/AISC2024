@@ -462,6 +462,24 @@ section.display .screen .registration .price p{
   text-align: left;
 }
 
+section.display .screen .registration #registerButton{
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 10px;
+  background-color: rgb(135, 2, 2);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all .2s;
+}
+section.display .screen .registration #registerButton:hover{
+  color: rgb(135, 2, 2);
+  background-color: rgb(255, 193, 193);
+}
+
 .button {
   position: relative;
   overflow: hidden;
