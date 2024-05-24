@@ -67,6 +67,13 @@ const speakers = [
         'link': 'https://www.unive.it/data/people/5591776'
     },
     {
+        'name': 'Kenneth W. Regan',
+        'position': 'Professor, University at Buffalo',
+        'contact': '',
+        'image': '/assets/images/speaker/regan.jpg',
+        'link': 'https://cse.buffalo.edu/~regan/'
+    },
+    {
         'name': 'Dr. Prahlad Ram',
         'position': 'Scientist, Scince and Engineering Research Board',
         'contact': '',
