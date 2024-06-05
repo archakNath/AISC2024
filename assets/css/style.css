@@ -304,6 +304,33 @@ section.display .screen .speakers .indi-speaker div p{
   }
 }
 
+section.display .screen .tutorial #tutorialBtn{
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  background-color: rgb(135, 2, 2);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all .2s;
+}
+section.display .screen .tutorial #tutorialBtn:hover{
+  color: rgb(135, 2, 2);
+  background-color: rgb(255, 193, 193);
+}
+
+section.display .screen .tutorial h2{
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 22px;
+  color: green;
+}
 section.display .screen .tutorial img{
   width: 100%;
   border-radius: 10px;
