@@ -176,43 +176,6 @@ intSpeakers.forEach(speaker => {
 
     interspeakerList.appendChild(indiSpeaker);
 });
-speakers.forEach(speaker => {
-    const indiSpeaker = document.createElement('div');
-    const speakerImage = document.createElement('img');
-    const speakerName = document.createElement('h2');
-    const speakerPosition = document.createElement('p');
-    const speakerLink = document.createElement('div');
-    const speakerLinkImage = document.createElement('img');
-    const speakerLinkText = document.createElement('p');
-
-
-    speakerLinkImage.src = '/assets/images/menu-icon.svg';
-    speakerLinkText.textContent = 'More Info';
-    indiSpeaker.setAttribute('class', 'indi-speaker');
-    if (speaker.image == '') {
-        speakerImage.src = '/assets/images/default-image.png';
-    } else {
-        speakerImage.src = speaker.image;
-    }
-    indiSpeaker.appendChild(speakerImage);
-    speakerName.textContent = speaker.name;
-    indiSpeaker.appendChild(speakerName);
-    if (speaker.position != '') {
-        speakerPosition.textContent = speaker.position;
-        indiSpeaker.appendChild(speakerPosition);
-    }
-    if (speaker.link != '') {
-        speakerLink.onclick = () => {
-            window.open(speaker.link, '_blank')
-        }
-        speakerLink.appendChild(speakerLinkImage);
-        speakerLink.appendChild(speakerLinkText);
-        indiSpeaker.appendChild(speakerLink);
-    }
-
-    speakerList.appendChild(indiSpeaker);
-});
-
 {/* <div class="speaker-list">
         <div class="indi-speaker">
             <img src="/assets/images/default-image.png" alt="">
@@ -226,4 +189,8 @@ speakers.forEach(speaker => {
 const registerBtn = document.getElementById('registerButton');
 registerBtn.onclick = () => {
     window.open('https://docs.google.com/forms/d/e/1FAIpQLSea7xljsu2ILAIqwOVEgLE7rw0Y7e2R3JGVDuvZ-eBXEMkPiQ/viewform?usp=pp_url', '_blank')
+}
+const tutorialBtn = document.getElementById('tutorialBtn');
+tutorialBtn.onclick = () => {
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLSecHDzrC-NOAsFsob5swentewfEStv77SI18q9OL_J6ncDK2A/viewform', '_blank')
 }
