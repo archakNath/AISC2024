@@ -73,8 +73,6 @@ const intSpeakers = [
         'image': '/assets/images/speaker/regan.jpg',
         'link': 'https://cse.buffalo.edu/~regan/'
     },
-]
-const speakers = [
     {
         'name': 'Dr. Prahlad Ram',
         'position': 'Scientist, Scince and Engineering Research Board',
