@@ -407,7 +407,7 @@ section.display .screen .important-dates p {
 section.display .screen .important-dates span {
   background: linear-gradient(to right, #7efb7b, #0bcbfb);
   padding: 8px 10px;
-  border-radius: 0 5px 5px 0;
+  border-radius: 5px;
 }
 
 .line-through{
