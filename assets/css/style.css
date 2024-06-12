@@ -153,6 +153,41 @@ main p {
   font-weight: 500;
 }
 
+main .listener{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+main .listener .container{
+  background: linear-gradient(-45deg, #7efb7b, #0bcbfb);
+  background-size: 400% 400%;
+  display: flex;
+  padding: 15px 20px;
+  border-radius: 10px;
+  gap: 20px;
+  width: 50%;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.295);
+  animation: animate 7s ease infinite;
+}
+
+main .listener .container button{
+  padding: 10px 12px;
+  color: black;
+  background-color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 0 15px 1px rgba(255, 255, 255, 0.249);
+}
+
 @media(max-width:700px) {
 
 
@@ -167,6 +202,22 @@ main p {
 
   main .centre div {
     width: 100%;
+  }
+
+  main .listener .container{
+    width: 90%;
+  }
+}
+
+@keyframes animate{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
   }
 }
 
