@@ -194,3 +194,7 @@ const tutorialBtn = document.getElementById('tutorialBtn');
 tutorialBtn.onclick = () => {
     window.open('https://docs.google.com/forms/d/e/1FAIpQLSecHDzrC-NOAsFsob5swentewfEStv77SI18q9OL_J6ncDK2A/viewform', '_blank')
 }
+const listernerBtn = document.getElementById('listenerBtn');
+listernerBtn.onclick = () => {
+    window.open('https://docs.google.com/forms/d/e/1FAIpQLScrElN43XbtMshUQFDQ3tk08_wsAuLXRJxx5q6E0emr6mW3yw/viewform?usp=pp_url', '_blank')
+}
