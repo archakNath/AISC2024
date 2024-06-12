@@ -163,7 +163,7 @@ main .listener{
 }
 
 main .listener .container{
-  background: linear-gradient(-45deg, #7efb7b, #0bcbfb);
+  background: linear-gradient(-45deg, #7efb7b, #0bcbfb, rgb(123, 255, 0), white);
   background-size: 400% 400%;
   display: flex;
   padding: 15px 20px;
@@ -206,6 +206,14 @@ main .listener .container button{
 
   main .listener .container{
     width: 90%;
+  }
+
+  main .listener .container h2{
+    font-size: 17px;
+  }
+
+  main .listener .container button{
+    font-size: 15px;
   }
 }
 
