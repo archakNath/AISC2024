@@ -136,6 +136,13 @@ const intSpeakers = [
         'image': '/assets/images/speaker/arijit.jpg',
         'link': 'https://scholar.google.co.in/citations?user=99_nlsMAAAAJ&hl=en'
     },
+    {
+        'name': 'Dr. Nandini Mukherjee',
+        'position': 'Professor, Jadavpur University',
+        'contact': '',
+        'image': '/assets/images/speaker/nandini.jpg',
+        'link': 'http://www.jaduniv.edu.in/profile.php?uid=875'
+    },
 ]
 
 const interspeakerList = document.querySelector('.international-speaker-list');

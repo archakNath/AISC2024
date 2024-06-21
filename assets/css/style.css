@@ -45,6 +45,15 @@ marquee{
   padding: 10px;
 }
 
+span.red-h{
+  font-weight: bold;
+  color: red;
+}
+span.blue-h{
+  font-weight: bold;
+  color: rgb(0, 119, 255);
+}
+
 header {
   display: flex;
   justify-content: space-between;
