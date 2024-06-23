@@ -254,6 +254,20 @@ main .listener .container button{
   main .listener .container button{
     font-size: 15px;
   }
+
+  .venue .container{
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .venue .container iframe{
+    width: 95%;
+
+  }
+
+  .venue .container .venue-details{
+    width: 100%;
+  }
 }
 
 @keyframes animate{
