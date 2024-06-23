@@ -168,7 +168,7 @@ main .listener{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-bottom: 60px;
+  padding-bottom: 15px;
 }
 
 main .listener .container{
@@ -194,7 +194,37 @@ main .listener .container button{
   border: none;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.venue{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+}
+
+.venue .container{
+  background: linear-gradient(-45deg, #7efb7b, #0bcbfb, rgb(123, 255, 0), white);
+  background-size: 400% 400%;
+  width: 50%;
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  animation: animate1 7s ease infinite;
   box-shadow: 0 0 15px 1px rgba(255, 255, 255, 0.249);
+}
+
+.venue .container .venue-details{
+  width: 70%;
+  padding: 15px;
+}
+
+.venue .container iframe{
+  width: 30%;
+  height: 200px;
+  border-radius: 10px;
+  margin: 10px;
 }
 
 @media(max-width:700px) {
@@ -227,6 +257,17 @@ main .listener .container button{
 }
 
 @keyframes animate{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+@keyframes animate1{
   0%{
     background-position: 0 50%;
   }
@@ -391,6 +432,20 @@ section.display .screen .tutorial #tutorialBtn:hover{
   background-color: rgb(255, 193, 193);
 }
 
+section.display .screen .tutorial .venue{
+  padding: 0;
+}
+
+section.display .screen .tutorial .venue .container{
+  width: 100%;
+}
+
+section.display .screen .tutorial .venue h2{
+  text-align: left;
+  color: black;
+  margin: 0;
+}
+
 section.display .screen .tutorial h2{
   margin-top: 20px;
   margin-bottom: 10px;
@@ -485,6 +540,26 @@ section.display .screen .important-dates span {
 
 section.display .screen .organizing-committee li {
   list-style: none;
+}
+
+
+section.display .screen .poster-guidelines #posterButton{
+  width: 100%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding: 10px 10px;
+  background-color: rgb(135, 2, 2);
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all .2s;
+}
+section.display .screen .poster-guidelines #posterButton:hover{
+  color: rgb(135, 2, 2);
+  background-color: rgb(255, 193, 193);
 }
 
 section.display .screen .guidelines p:nth-child(2){

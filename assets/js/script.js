@@ -102,6 +102,13 @@ const intSpeakers = [
         'link': 'https://www.isical.ac.in/~bimal/'
     },
     {
+        'name': 'Dr. Nandini Mukherjee',
+        'position': 'Professor, Jadavpur University',
+        'contact': '',
+        'image': '/assets/images/speaker/nandini.jpg',
+        'link': 'http://www.jaduniv.edu.in/profile.php?uid=875'
+    },
+    {
         'name': 'Aditya Kr Sinha',
         'position': 'Director at C-DAC Patna & C-DAC Kolkata',
         'contact': '',
@@ -135,13 +142,6 @@ const intSpeakers = [
         'contact': '',
         'image': '/assets/images/speaker/arijit.jpg',
         'link': 'https://scholar.google.co.in/citations?user=99_nlsMAAAAJ&hl=en'
-    },
-    {
-        'name': 'Dr. Nandini Mukherjee',
-        'position': 'Professor, Jadavpur University',
-        'contact': '',
-        'image': '/assets/images/speaker/nandini.jpg',
-        'link': 'http://www.jaduniv.edu.in/profile.php?uid=875'
     },
 ]
 
@@ -204,4 +204,8 @@ tutorialBtn.onclick = () => {
 const listernerBtn = document.getElementById('listenerBtn');
 listernerBtn.onclick = () => {
     window.open('https://docs.google.com/forms/d/e/1FAIpQLScrElN43XbtMshUQFDQ3tk08_wsAuLXRJxx5q6E0emr6mW3yw/viewform?usp=pp_url', '_blank')
+}
+const posterButton = document.getElementById('posterButton');
+posterButton.onclick = () => {
+    window.open('https://firebasestorage.googleapis.com/v0/b/artco-bb7b5.appspot.com/o/Poster1.pdf?alt=media&token=4608bf05-e8ad-46f1-bb5a-97d8474229ee', '_blank')
 }
