@@ -74,20 +74,6 @@ const intSpeakers = [
         'link': 'https://cse.buffalo.edu/~regan/'
     },
     {
-        'name': 'Dr. Prahlad Ram',
-        'position': 'Scientist, Scince and Engineering Research Board',
-        'contact': '',
-        'image': '/assets/images/speaker/prahlad.jpg',
-        'link': 'https://www.linkedin.com/in/dr-prahlad-ram-a0624a154/?originalSubdomain=in'
-    },
-    {
-        'name': 'Indivar Gupta',
-        'position': 'Defence Research and Development Organization',
-        'contact': '',
-        'image': '/assets/images/speaker/indivir.jpg',
-        'link': 'https://scholar.google.co.in/citations?user=-bzRyQMAAAAJ&hl=en'
-    },
-    {
         'name': 'Dr. Partha Pratim Das (PPD)',
         'position': 'Professor, Dept. of CSE, IIT Kharagpur',
         'contact': '',
@@ -121,6 +107,13 @@ const intSpeakers = [
         'contact': '',
         'image': '/assets/images/speaker/sanjay.jpeg',
         'link': 'https://www.linkedin.com/in/sanjaykumardas/?originalSubdomain=in'
+    },
+    {
+        'name': 'Ms. Kamiya Khatter',
+        'position': 'Associate Editor, Applied Sciences and Engineering, Springer Nature India',
+        'contact': '',
+        'image': '/assets/images/speaker/kamiya.jpg',
+        'link': 'https://www.springer.com/it/authors-editors/suvira-srivastav/16744110'
     },
     {
         'name': 'Sourabh Mukherjee',
