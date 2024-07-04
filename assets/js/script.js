@@ -202,3 +202,7 @@ const posterButton = document.getElementById('posterButton');
 posterButton.onclick = () => {
     window.open('https://firebasestorage.googleapis.com/v0/b/artco-bb7b5.appspot.com/o/Poster1.pdf?alt=media&token=4608bf05-e8ad-46f1-bb5a-97d8474229ee', '_blank')
 }
+const ScheduleButton = document.getElementById('ScheduleButton');
+ScheduleButton.onclick = () => {
+    window.open('https://firebasestorage.googleapis.com/v0/b/artco-bb7b5.appspot.com/o/Poster1.pdf?alt=media&token=4608bf05-e8ad-46f1-bb5a-97d8474229ee', '_blank')
+}
