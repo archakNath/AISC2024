@@ -204,5 +204,5 @@ posterButton.onclick = () => {
 }
 const ScheduleButton = document.getElementById('ScheduleButton');
 ScheduleButton.onclick = () => {
-    window.open('https://firebasestorage.googleapis.com/v0/b/artco-bb7b5.appspot.com/o/Poster1.pdf?alt=media&token=4608bf05-e8ad-46f1-bb5a-97d8474229ee', '_blank')
+    window.open('https://firebasestorage.googleapis.com/v0/b/aisc2024-cc60f.appspot.com/o/Tentative%20Program%20schedule%20AISC%202024.pdf?alt=media&token=964695b1-d306-4b76-9140-02c967de6eaf', '_blank')
 }
