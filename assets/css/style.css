@@ -822,7 +822,7 @@ section.display .screen .copyright p:nth-child(2){
 }
 
 section.display .screen .copyright p:nth-child(3) {
-  color: #E36400;
+  color: black;
   font-weight: bold;
 }
 
