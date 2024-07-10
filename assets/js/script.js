@@ -136,6 +136,13 @@ const intSpeakers = [
         'image': '/assets/images/speaker/arijit.jpg',
         'link': 'https://scholar.google.co.in/citations?user=99_nlsMAAAAJ&hl=en'
     },
+    {
+        'name': 'Jibendu Mazumder',
+        'position': 'Director, Cognizant Technology Solutions',
+        'contact': '',
+        'image': '/assets/images/speaker/jivyendu.jpg',
+        'link': 'https://www.linkedin.com/in/jibendu-mazumder-78237a5/'
+    },
 ]
 
 const interspeakerList = document.querySelector('.international-speaker-list');
